@@ -8,9 +8,8 @@ function AppRouter() {
   return (
     <Routes>
       <Route path="/*" element={<MainLayout />}>
-        <Route index element={<Navigate to={<KursPage />} />} />
+        <Route index element={<Navigate to="/Courses" />} />
         <Route path="Courses" element={<KursPage />} />
-
         <Route path="Schedule" element={<Raspisanya />} />
       </Route>
     </Routes>
